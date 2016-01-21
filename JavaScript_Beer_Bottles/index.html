@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>99 Bottles of Beer</title>
+    <script>
+   
+        var bottle = "bottles";
+        var count = 99;
+        
+        while (count > 1)
+        {
+            console.log(count + " " + bottle + " of beer on the wall, " + count + " " + bottle + " of beer.");
+            console.log("Take one down, pass it around.");
+            count = count -1;
+            
+            if (count == 1)
+            {
+                bottle = "bottle"
+                console.log(count + " " + bottle + " of beer on the wall.")
+                console.log(count + " " + bottle + " of beer on the wall, " + count + " " + bottle + " of beer.");
+                console.log("Take it down, pass it around.");
+                console.log("Now you need more beer on the wall!");
+            }
+      
+            else
+            {
+                bottle = "bottles"; 
+                console.log(count + " " + bottle + " of beer on the wall.")       
+            }
+        }
+            
+    </script>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        
+        var beerName = prompt("What is your favorite kind of beer?");
+        alert(beerName + " is a great tasting beer!")
+        var bottle = "bottles";
+        var count = 99;
+        
+        while (count > 1)
+        {
+            document.write(count + " " + bottle + " of beer on the wall, " + count + " " + bottle + " of beer.");
+            document.write(" Take one down, pass it around.");
+            count = count -1;
+            document.write("</br>");
+            
+            if (count == 1)
+            {
+                bottle = "bottle"
+                document.write(count + " " + bottle + " of beer on the wall. ")
+                document.write("</br>");
+                document.write(count + " " + bottle + " of beer on the wall, " + count + " " + bottle + " of beer.");
+                document.write(" Take it down, pass it around.");
+                document.write("</br>");
+                document.write("Now you need more beer on the wall!");
+            }
+
+            else
+            {
+                bottle = "bottles"; 
+                document.write(count + " " + bottle + " of beer on the wall.")
+                document.write("</br>");       
+            }
+        }
+</script>
+</body>
+
+</html>
