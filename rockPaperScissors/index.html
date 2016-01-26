@@ -4,7 +4,7 @@ PlayPaper()
 
 Press one of three buttons and play against a random number generator-->
 
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,5 +19,20 @@ Press one of three buttons and play against a random number generator-->
     <button onclick="paper">Paper</button>
     <button onclick="scissors">Scissors</button>
     
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors</h1>
+    <button onClick='choose("rock")'>Rock</button>
+    <button onClick='choose("paper")'>Paper</button>
+    <button onClick='choose("scissors")'>Scissors</button><br>
+    <button onClick='compare(user, computerChoice)'>Go!</button>
+    <p id="result"></p>
 </body>
 </html>

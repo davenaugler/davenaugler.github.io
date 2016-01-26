@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dog Var</title>
+</head>
+<body>
+    
+    Name: <span id= "sName"> </span><br/>
+    Weight: <span id="sWeight"></span><br/>
+    <input type="text" id="tFoodCount"/>
+    <button onclick="dog.eatUserDetermined()">Eat</button>
+    
+    <script>
+        var dog = {
+            name: "Rover",
+            weight: 25,
+            eat: function(){
+                this.eatNumber(2);
+                // alert("eat!");
+                // this.weight += 2;
+                // this.weight = this.weight + 2;
+                // document.getElementById("sWeight").textContent = this.weight;
+            },
+            eatNumber: function(foodCount){
+                this.weight += foodCount;
+                // Document.getElementById("tFoodCount").value;
+                 document.getElementById("sWeight").textContent = this.weight;
+            },
+            eatUserDetermined: function(){
+                //parseInt takes a string and conversts it to a number.
+                var meals = parseInt(document.getElementById("tFoodCount").value);
+                //Validate that food count is anumber before adding it to the weight.
+                if(!isNaN(meals)){
+                this.eatNumber(meals);
+            }else{
+                alert("Enter a valid number!")
+            }  
+        }
+        }
+          document.getElementById("sName").textContent = dog.name;
+          document.getElementById("sWeight").textContent = dog.weight;
+    </script>
+    
+</body>
+</html>
