@@ -3,7 +3,7 @@ app.controller('RosterController', function ($scope) {
     //YOUR CODE HERE
     
     $scope.players = [];
-
+debugger;
     $scope.addPlayer = function () {
 
         var player = {

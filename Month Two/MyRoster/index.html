@@ -25,17 +25,19 @@
 
                             <label for="addPlayeNumber">Player Number</label>
                             <input type="text" class="form-control" id="addPlayerNumber" placeholder="Player Number" ng-model="newPlayer.Number">
+                            <button type="submit" class="btn btn-default" ng-click="addPlayer()">Add to Team</button>
+
                         </div>
 
-                        <button type="submit" class="btn btn-default" ng-click="addPlayer()">Add to Team</button>
+
                     </div>
                 </div>
             </div>
         </div>
-       
+
 
     </form>
-   
+
 
     <div ng-repeat="player in players">
         <div class="col-md-3">
